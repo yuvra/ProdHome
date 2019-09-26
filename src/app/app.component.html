@@ -1,0 +1,26 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+
+  <mat-card><h3>Hall</h3></mat-card>
+  <div class="btn-body">
+    <div class="btn-container">
+      Light1 :
+      <button id="1" (click)="handleOnOff('L1')"  mat-raised-button color="{{ this.L1 === 'ON' ? 'warn' : 'primary'}}" style="margin: 5px">{{this.L1}}</button>
+    </div>
+
+    <div class="btn-container">
+        Light2 :
+        <button id="2" (click)="handleOnOff('L2')"  mat-raised-button color="{{ this.L2 === 'ON' ? 'warn' : 'primary'}}" style="margin: 5px">{{this.L2}}</button>
+    </div>
+
+    <div class="btn-container">
+        Light3 :
+        <button id="3" (click)="handleOnOff('L3')"  mat-raised-button color="{{ this.L3 === 'ON' ? 'warn' : 'primary'}}" style="margin: 5px">{{this.L3}}</button>
+    </div>
+
+  </div>
+<router-outlet></router-outlet>
+</div>
